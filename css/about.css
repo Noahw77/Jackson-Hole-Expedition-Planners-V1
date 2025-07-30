@@ -100,3 +100,50 @@
 .section h2 {
   color: #2d1f14;
 }
+
+/* Checkerboard Profile Tiles */
+.checkerboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+  margin: 0 auto 3em auto;
+  gap: 0;
+}
+
+.profile-tile {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.profile-tile img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+.profile-tile h3 {
+  margin: 0.25em 0 0;
+  color: #2d1f14;
+}
+.profile-tile .title {
+  color: #cd7f32;
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+.profile-tile p {
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* Alternating background colors */
+.profile-tile.light {
+  background-color: #f9f6f2;
+}
+.profile-tile.dark {
+  background-color: #e6e0d9;
+}
