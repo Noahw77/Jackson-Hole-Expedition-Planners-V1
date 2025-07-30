@@ -33,27 +33,37 @@
 }
 
 /* Profile Image & Info */
+/* Checkerboard fix */
+.profile-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  align-items: center;
+}
+.profile-container.reverse {
+  direction: rtl;
+}
+.profile-container.reverse .profile-text {
+  direction: ltr;
+}
+
+.profile-image,
+.profile-text {
+  padding: 2em;
+}
 .profile-image {
-  flex: 1 1 250px;
-  text-align: center;
+  background-color: #f9f6f2;
 }
-.profile-image img {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 0.5em;
+.profile-text {
+  background-color: #e6e0d9;
 }
-.profile-image h3 {
-  margin: 0.25em 0 0;
-  color: #2d1f14;
+.alt-dark .profile-image {
+  background-color: #e6e0d9;
 }
-.profile-image .title {
-  color: #cd7f32;
-  font-weight: bold;
-  font-size: 0.9em;
-  margin-top: -4px;
+.alt-dark .profile-text {
+  background-color: #f9f6f2;
 }
+
 
 /* Bio Text */
 .profile-text {
@@ -74,4 +84,19 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.section {
+  padding: 4em 2em;
+  background-color: #f9f6f2;
+  margin-bottom: 2em;
+  border-top: 5px solid #cd7f32;
+}
+.section-text.center {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.section h2 {
+  color: #2d1f14;
 }
