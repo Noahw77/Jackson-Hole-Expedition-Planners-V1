@@ -1,0 +1,77 @@
+/* Team Banner */
+.banner img.team-banner {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 2em;
+}
+
+/* Section Backgrounds */
+.profile-section {
+  padding: 3em 2em;
+}
+.alt-light {
+  background-color: #f9f6f2;
+}
+.alt-dark {
+  background-color: #e6e0d9;
+}
+
+/* Layout Containers */
+.profile-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.profile-container.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Profile Image & Info */
+.profile-image {
+  flex: 1 1 250px;
+  text-align: center;
+}
+.profile-image img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5em;
+}
+.profile-image h3 {
+  margin: 0.25em 0 0;
+  color: #2d1f14;
+}
+.profile-image .title {
+  color: #cd7f32;
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-top: -4px;
+}
+
+/* Bio Text */
+.profile-text {
+  flex: 2 1 400px;
+  text-align: center;
+  font-size: 1.1em;
+  color: #333;
+}
+
+/* Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
